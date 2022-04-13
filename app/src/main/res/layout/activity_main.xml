@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFEB3B"
     tools:context=".MainActivity">
 
     <TextView
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="376dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/TBCelular"
         app:layout_constraintHorizontal_bias="0.495"
@@ -24,11 +26,13 @@
         android:id="@+id/TBNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="104dp"
         android:ems="10"
         android:hint="Nombre"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,10 +40,11 @@
         android:id="@+id/BtnInvertir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="@color/mi_rojo"
         android:text="Invertir"
         app:layout_constraintEnd_toEndOf="@+id/TxtResultado"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="@+id/TxtResultado"
         app:layout_constraintTop_toBottomOf="@+id/TxtResultado" />
 
@@ -51,9 +56,21 @@
         android:ems="10"
         android:hint="Celular"
         android:inputType="phone"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="@+id/TBNombre"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/TBNombre"
         app:layout_constraintTop_toBottomOf="@+id/TBNombre" />
+
+    <Button
+        android:id="@+id/BtnProcesarTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/mi_rojo"
+        android:text="@string/BtnInvertirTexto"
+        app:layout_constraintEnd_toEndOf="@+id/BtnInvertir"
+        app:layout_constraintStart_toStartOf="@+id/BtnInvertir"
+        app:layout_constraintTop_toBottomOf="@+id/BtnInvertir" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

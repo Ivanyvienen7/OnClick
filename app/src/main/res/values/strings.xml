@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">OnClick</string>
+    <string name="BtnInvertirTexto">Invertir Texto</string>
 </resources>
